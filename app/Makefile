@@ -28,6 +28,7 @@ SUBDIRS=    \
 	udhcp \
 	ssl \
 	lwip \
+	driver
 
 endif # } PDIR
 
@@ -67,6 +68,7 @@ COMPONENTS_eagle.app.v6 = \
 	udhcp/libudhcp.a \
 	ssl/libssl.a \
 	lwip/liblwip.a \
+	driver/libdriver.a
 
 LINKFLAGS_eagle.app.v6 = \
 	-L../lib        \
@@ -135,6 +137,7 @@ INCLUDES += -I $(PDIR)lwip/include -I $(PDIR)lwip/include/lwip -I $(PDIR)lwip/in
 INCLUDES += -I $(PDIR)udhcp/include
 INCLUDES += -I $(PDIR)ssl/include
 INCLUDES += -I $(PDIR)json/include
+INCLUDES += -I $(PDIR)driver/include -I $(PDIR)driver/include/driver
 PDIR := ../$(PDIR)
 sinclude $(PDIR)Makefile
 
