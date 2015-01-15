@@ -27,7 +27,7 @@ SUBDIRS=    \
 	json \
 	udhcp \
 	ssl \
-#	lwip \
+	lwip \
 
 endif # } PDIR
 
@@ -66,7 +66,7 @@ COMPONENTS_eagle.app.v6 = \
 	json/libjson.a \
 	udhcp/libudhcp.a \
 	ssl/libssl.a \
-#	lwip/liblwip.a \
+	lwip/liblwip.a \
 
 LINKFLAGS_eagle.app.v6 = \
 	-L../lib        \
